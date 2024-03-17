@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Shop</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container header__container">
+        <a href="./index.html" class="header__logo">Simple Shop</a>
+        <nav class="nav">
+          <form class="nav__search">
+            <input type="text" placeholder="Search..." />
+            <button>Search</button>
+          </form>
+          <div class="nav__end">
+            <div class="nav__mode">
+              <i class="fa-solid fa-sun"></i>
+              <i class="fa-solid fa-moon hidden"></i>
+            </div>
+            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+    <!-- main -->
+    <main>
+      <div class="container">
+        <!-- flowers -->
+        <section id="flowers">
+          <h1 class="title">Flowers</h1>
+          <ul class="flowers__list"></ul>
+        </section>
+        <!-- /flowers -->
+        <!-- Clothes -->
+        <section id="clothes">
+          <h1 class="title">Clothes</h1>
+          <ul class="clothes__list"></ul>
+        </section>
+        <!-- /clothes -->
+        <!-- accessories -->
+        <section id="accessories">
+          <h1 class="title">Accessories</h1>
+          <ul class="accessories__list"></ul>
+        </section>
+        <!-- /accessories -->
+      </div>
+    </main>
+    <!-- /main -->
+    <!-- modal -->
+    <section class="modal hidden">
+      <div class="modal__header">
+        <h3>Shopping Cart</h3>
+        <button>
+          <img src="./icons/close-modal.svg" alt="close modal" />
+        </button>
+      </div>
+      <ul class="modal__list"></ul>
+    </section>
+    <!-- /modal -->
+    <script src="./js/detail.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
